@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+      include ./bootstrap.pug
+      style(type='text/css').
+        .jumbotron {
+          background-color: white;
+        }
+        .section-header {
+          margin-top: -20px;
+        }
+        .panel {
+          -webkit-box-shadow: none;
+          box-shadow: none;
+        }
+  body
+    .container
+      block header
+        div(class='container-fluid')
+          div(class='row-fluid')
+            div(class='col-md-12')
+              div(class='jumbotron')
+                h1 Elise Rodrigues
+                p(class='lead') call me |
+                  a(href='mailto:erodri20@jhu.edu')  email me
+        block body

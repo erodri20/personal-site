@@ -1,0 +1,38 @@
+extends ./layout.pug
+
+block body
+  div(class='container-fluid')
+    div(class='row-fluid')
+      div(class='col-md-5 col-md-offset-1')
+        h1(class='section-header') Experience
+        div(class='panel-group' id='accordian' role='tablist' aria-multiselectable=true)
+          div(class='panel')
+            div(class='panel-heading' role='tab' id='headingOne')
+              h4(class='panel-title')
+                a(role='button' data-toggle='collapse' data-parent='#accordian'
+                href='#collapseOne' aria-expanded='true'
+                aria-controls='collapseOne') Baltimore Corps
+                  span(class="glyphicon glyphicon-menu-down")
+            div(class='panel-collapse collapse' id='collapseOne' role='tabpanel' aria-labelledby='headingOne')
+              div(class='panel-body')
+                my role at Baltimore Corps
+          div(class='panel')
+            div(class='panel-heading' role='tab' id='headingTwo')
+              h4(class='panel-title')
+                a(role='button' data-toggle='collapse' data-parent='#accordian'
+                href='#collapseTwo' aria-expanded='true'
+                aria-controls='collapseTwo') Johns Hopkins Berman Institute of Bioethics
+                  span(class="glyphicon glyphicon-menu-down")
+            div(class='panel-collapse collapse' id='collapseTwo' role='tabpanel' aria-labelledby='headingTwo')
+              div(class='panel-body')
+                my role at BI
+          div(class='panel')
+            div(class='panel-heading' role='tab' id='headingThree')
+              h4(class='panel-title')
+                a(role='button' data-toggle='collapse' data-parent='#accordian'
+                href='#collapseThree' aria-expanded='true'
+                aria-controls='collapseThree') Johns Hopkins Office of Summer Programs
+                  span(class="glyphicon glyphicon-menu-down")
+            div(class='panel-collapse collapse' id='collapseThree' role='tabpanel' aria-labelledby='headingThree')
+              div(class='panel-body')
+                my role at JHU

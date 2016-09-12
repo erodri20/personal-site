@@ -1,44 +1,13 @@
-head
-    include ./bootstrap.pug
-    style(type='text/css').
-      .jumbotron {
-        background-color: white;
-      }
-      .section-header {
-        margin-top: -20px;
-      }
+extends ./layout.pug
 
-body
-
+block body
   div(class='container-fluid')
     div(class='row-fluid')
-      div(class='col-md-12')
-        div(class='jumbotron')
-          h1 Elise Rodrigues
-          p(class='lead') call me |
-            a(href='mailto:erodri20@jhu.edu')  email me
-    div(class='row-fluid')
-      div(class='col-md-4 col-md-offset-2')
-        h1(class='section-header') Education
-        h3 Johns Hopkins University
-        h3
-          em Dean's List Fall 2015
-        h4 Related Coursework
-          ul
-            li Java
-            li Intermediate Programming in C/C++
-            li Full Stack Web Development
-            li Data Structures
-            li Object Oriented Software Engineering
-            li Computer System Fundamentals
-      div(class='col-md-4 col-md-offset-1')
-        h1(class='section-header') Experience
-        div(class='panel-group' id='accordian' role='tablist' aria-multiselectable=true)
-          div(class='panel panel-default')
-            div(class='panel-heading' role='tab' id='headingOne')
-              h4(class='panel-title')
-                a(role='button' data-toggle='collapse' data-parent='#accordian' href='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
-                  | Baltimore Corps
-            div(class='panel-collapse collapse' id='collapseOne' role='tabpanel' aria-labelledby='headingOne')
-              div(class='panel-body')
-                my role at Baltimore Corps
+      div(class='col-md-3')
+        img(src='images/kai.jpg' alt='Education' class='thumbnail img-thumbnail img-responsive')
+      div(class='col-md-3')
+        img(src='images/kai.jpg' alt='Education' class='thumbnail img-thumbnail img-responsive')
+      div(class='col-md-3')
+        img(src='images/kai.jpg' alt='Education' class='thumbnail img-thumbnail img-responsive')
+      div(class='col-md-3')
+        img(src='images/kai.jpg' alt='Education' class='thumbnail img-thumbnail img-responsive')
